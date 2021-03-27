@@ -4,8 +4,10 @@ calc :
 test : calc
 	./calc
 
+run : test
+
 sample : calc
-	./calc | head -40
+	./calc | head -20
 
 debug : calc
 	gdb calc
